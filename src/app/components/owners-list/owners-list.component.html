@@ -1,0 +1,7 @@
+<ul *ngFor="let owner of owners">
+    <li>{{owner.firstname}}</li>
+    <li>{{ owner.lastname }}</li>
+    <li><ol *ngFor="let car of owner.cars">
+        <li>{{ car.brand }}, {{ car.model }}, {{ car.colour }} </li>
+    </ol></li>
+</ul>
